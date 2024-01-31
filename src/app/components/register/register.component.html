@@ -1,0 +1,21 @@
+<!-- user-form.component.html -->
+
+<form (ngSubmit)="onSubmitUser()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="user.Username" name="username" required>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="user.Password" name="password" required>
+  
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="string" id="phoneNumber" [(ngModel)]="user.PhoneNumber" name="phoneNumber" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="user.Email" name="email" required>
+  
+    <label for="city">City:</label>
+    <input type="text" id="city" [(ngModel)]="user.City" name="city" required>
+  
+    <button type="submit">Submit</button>
+  </form>
+  

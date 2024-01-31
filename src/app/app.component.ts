@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {environment} from '../config';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'User';
+  apiurl = environment.apiUrl;
 }
